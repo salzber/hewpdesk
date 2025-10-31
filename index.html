@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HP Printer Support</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto flex justify-between items-center py-3 px-5">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="https://storage.googleapis.com/a1aa/image/d5c27842-5f28-4f1b-0df9-1ad19c57b756.jpg" alt="HP Logo" class="w-10">
+        <h1 class="font-semibold text-blue-700 text-lg">HP Support Center</h1>
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="#" class="hover:text-blue-700">Home</a>
+        <a href="#" class="hover:text-blue-700">Drivers</a>
+        <a href="#" class="hover:text-blue-700">Setup Help</a>
+        <a href="#" class="hover:text-blue-700">Contact</a>
+        <a onclick="callNow()" class="px-4 py-2 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700">
+          📞 +1-855-889-3343
+        </a>
+      </nav>
+
+      <!-- Mobile Button -->
+      <button id="menu-btn" class="md:hidden text-2xl text-gray-700"><i class="fas fa-bars"></i></button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-gray-100 border-t">
+      <ul class="flex flex-col text-sm font-medium px-5 py-4 space-y-3">
+        <a href="#" class="hover:text-blue-700">Home</a>
+        <a href="#" class="hover:text-blue-700">Drivers</a>
+        <a href="#" class="hover:text-blue-700">Setup Help</a>
+        <a href="#" class="hover:text-blue-700">Contact</a>
+        <a onclick="callNow()" class="text-blue-700 font-semibold">📞 +1-855-889-3343</a>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center py-20 text-white"
+    style="background-image: url('https://i.rtings.com/assets/pages/FprM1nCb/best-office-printers-20231101-medium.jpg?format=auto');">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="relative z-10 text-center px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-3">Get Expert Help for Your HP Printer</h2>
+      <p class="text-gray-200 max-w-2xl mx-auto mb-6">
+        Troubleshoot, install, or fix your HP printer instantly with our certified support specialists available 24/7.
+      </p>
+      <a onclick="callNow()"
+        class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow">
+        📞 Call Now: +1-855-889-3343
+      </a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="max-w-7xl mx-auto py-14 px-6">
+    <h3 class="text-2xl font-bold text-center mb-10 text-blue-700">Our HP Printer Assistance Includes</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition">
+        <i class="fas fa-download text-blue-600 text-3xl mb-3"></i>
+        <h4 class="font-semibold mb-1">Driver Installation</h4>
+        <p class="text-sm text-gray-600">Install the latest printer drivers for smooth printing and scanning performance.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition">
+        <i class="fas fa-wifi text-blue-600 text-3xl mb-3"></i>
+        <h4 class="font-semibold mb-1">Wireless Setup</h4>
+        <p class="text-sm text-gray-600">Connect your HP printer to Wi-Fi, configure devices, and start printing instantly.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition">
+        <i class="fas fa-print text-blue-600 text-3xl mb-3"></i>
+        <h4 class="font-semibold mb-1">Print & Scan Fixes</h4>
+        <p class="text-sm text-gray-600">Resolve offline errors, paper jams, and scanning problems in a few minutes.</p>
+      </div>
+      <div class="bg-white rounded-xl p-6 shadow hover:shadow-lg transition">
+        <i class="fas fa-user-shield text-blue-600 text-3xl mb-3"></i>
+        <h4 class="font-semibold mb-1">Warranty & Updates</h4>
+        <p class="text-sm text-gray-600">Check HP warranty details and keep your printer firmware up to date.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mid CTA -->
+  <section class="bg-blue-700 text-white text-center py-12 px-6">
+    <h3 class="text-2xl font-bold mb-3">Need Immediate Assistance?</h3>
+    <p class="text-blue-100 mb-6">Our experts are available around the clock to fix any HP printer issues remotely.</p>
+    <a onclick="callNow()" class="px-8 py-3 bg-white text-blue-700 rounded-full font-semibold hover:bg-gray-100">
+      📞 Call Now: +1-855-889-3343
+    </a>
+  </section>
+
+  <!-- Printer Setup Guide -->
+  <section class="max-w-7xl mx-auto px-6 py-14 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h3 class="text-2xl font-bold text-blue-700 mb-3">Step-by-Step Printer Setup</h3>
+      <p class="text-gray-600 mb-4">Whether you just bought a new HP printer or need help reconnecting it, our setup specialists can guide you through every step — from driver installation to wireless configuration.</p>
+      <a onclick="callNow()" class="px-6 py-2 bg-blue-600 text-white rounded shadow hover:bg-blue-700">Start Setup</a>
+    </div>
+    <img src="https://images.pexels.com/photos/3831873/pexels-photo-3831873.jpeg" alt="HP Printer Setup" class="rounded-xl shadow-lg">
+  </section>
+
+  <!-- Troubleshooting Cards -->
+  <section class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-3 gap-6">
+    <div class="bg-white p-6 rounded-xl border hover:shadow-lg transition">
+      <h4 class="font-semibold text-blue-700 mb-2">Printer Offline Error</h4>
+      <p class="text-sm text-gray-600 mb-3">Fix printer not responding, offline, or queue issues quickly.</p>
+      <a onclick="callNow()" class="text-blue-600 text-sm font-medium">Resolve Now →</a>
+    </div>
+    <div class="bg-white p-6 rounded-xl border hover:shadow-lg transition">
+      <h4 class="font-semibold text-blue-700 mb-2">Paper Jam Issue</h4>
+      <p class="text-sm text-gray-600 mb-3">Get step-by-step help for removing stuck papers and restoring print quality.</p>
+      <a onclick="callNow()" class="text-blue-600 text-sm font-medium">Fix It →</a>
+    </div>
+    <div class="bg-white p-6 rounded-xl border hover:shadow-lg transition">
+      <h4 class="font-semibold text-blue-700 mb-2">Ink & Cartridge Problems</h4>
+      <p class="text-sm text-gray-600 mb-3">Replace or reset HP ink cartridges easily with expert assistance.</p>
+      <a onclick="callNow()" class="text-blue-600 text-sm font-medium">Get Help →</a>
+    </div>
+  </section>
+
+  <!-- Detect Your Printer -->
+  <section class="max-w-4xl mx-auto bg-white rounded-xl border p-8 mb-14 text-center">
+    <h3 class="text-xl font-bold text-blue-700 mb-3">Identify Your HP Printer</h3>
+    <p class="text-sm text-gray-600 mb-5">Enter your HP printer model or serial number to find drivers and support.</p>
+    <form class="flex flex-col sm:flex-row gap-3 justify-center">
+      <input type="text" placeholder="e.g., HP LaserJet MFP M234" class="border rounded px-4 py-2 w-full sm:w-96 text-sm">
+      <button class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 text-sm font-semibold">Search</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-gray-400 text-xs py-10 px-6 text-center">
+    <h4 class="text-white font-semibold mb-3">Disclaimer</h4>
+    <p class="max-w-3xl mx-auto leading-relaxed mb-2">
+      We are an independent third-party technical support provider for HP printers. All product names, logos, and trademarks belong to their respective owners. Official HP support may be available free of cost at HP’s official website.
+    </p>
+    <p>© 2025 HP Printer Assistance Center. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      menuBtn.innerHTML = mobileMenu.classList.contains("hidden")
+        ? '<i class="fas fa-bars"></i>'
+        : '<i class="fas fa-times"></i>';
+    });
+
+    function callNow() {
+      window.location.href = 'tel:+1-855-889-3343';
+    }
+  </script>
+
+</body>
+</html>
